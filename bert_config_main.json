@@ -1,0 +1,33 @@
+{
+    "_comment_segment_below_": "以下参数是与数据无紧密相关的模型参数",
+    "attention_probs_dropout_prob": 0.1,
+    "directionality": "bidi",
+    "hidden_act": "gelu",
+    "hidden_dropout_prob": 0.1,
+    "hidden_size": 256,
+    "initializer_range": 0.02,
+    "intermediate_size": 1024,
+    "max_position_embeddings": 512,
+    "num_attention_heads": 8,
+    "num_hidden_layers": 6,
+    "pooler_fc_size": 768,
+    "pooler_num_attention_heads": 12,
+    "pooler_num_fc_layers": 3,
+    "pooler_size_per_head": 128,
+    "pooler_type": "first_token_transform",
+    "_comment_segment_above_": "以上参数是与数据无紧密相关的模型参数",
+
+    "_comment_vocab_size_": "vocab_size：取整数, 指定词汇表中的词汇个数，由程序根据all_vocab_uniq.txt自动更新，此处仅为展示。",
+    "_comment_use_token_type_": "use_token_type：取值 true/false, 是否使用segment_ids。如果想使用（app或包名）类型特征，就设置为true，否则设置为false。由于现行特征默认使用包名特征，故默认值为true。",
+    "_comment_max_type_length_": "max_type_length：取值整数, 表示每个特征的segment_ids的长度（也就是包名/APP（多级）类型的数量）。此取值由train_transformer决定，此处只是展示。",
+    "_comment_use_position_": "use_position：取值 true/false, 是否使用position_embedding, 默认为否设置为false",
+    "_comment_out_dense_drop_": "out_dense_drop：取值[0, 1], 表示fc层的drop_out取值, 默认0.5",
+
+    "type_vocab_size": 1000,
+    "max_type_length": 3, 
+    "vocab_size": 126189,
+    "use_token_type": true,
+    "use_position": false,
+    "out_dense_drop": 0.5
+  }
+  

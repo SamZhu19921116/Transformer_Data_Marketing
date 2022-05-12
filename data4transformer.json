@@ -1,0 +1,21 @@
+{
+    "_comment_data_dir_":    "data_dir：数据源所在目录",
+    "_comment_target_dir_":  "target_dir：转换后的数据保存目录",
+    "_comment_mode_":        "mode：取值 train, test, both 指定转换训练、测试、全部数据",
+    "_comment_switch_":      "switch：取值 0/1 构成的字符串, 表示 放弃/利用该特征列，目前利用的特征有 手机型号/地域/用户行为标签/包名",
+    "_comment_type_":        "type：取值 0/1 构成的字符串, 表示 该特征列中的值是 单值/列表",
+    "_comment_filter_":      "filter：取值 0/1 构成的字符串, 表示 不利用/利用该特征列筛选数据",
+    "_comment_filter_mode_": "filter_mode：此参数与上面参数联合使用， and/or 表示 数据需包含上面选中的特征列的全部/之一 ",
+    "_comment_ban_":         "ban：此参数表示需要删除的特征值，与业务相关。eg: ['众安小贷','众安贷'] ",
+    "_comment_ratio_":       "ratio：此参数指定各级用户的数据抽取比例，用于控制各级用户的数据量。eg: [0.03,0.4,0.5,1,1,1] 表示一次从 随机, D意向, 触达, 点击, 注册, 申完, 授信 用户中取出 0.03,0.4,0.5,1.0,1.0,1.0 的数量构成数据集。 如果设置为 null, 就采用内置方案自动决定数据量。内置方案为： 注册, 申完, 授信的取样比例为1.0，D意向, 触达, 点击数据量与注册相同，随机样本数量量等于其余所有数据量之和。",
+
+    "data_dir":    "../data/yqg-intent-addpack-posandneg2random",
+    "target_dir":  "./data/converted/",
+    "mode":        "both", 
+    "switch":      "0011010100",
+    "type":        "0000111100",
+    "filter":      "0000010100",
+    "filter_mode": "or",
+    "ban":         null,
+    "ratio":       null
+}
